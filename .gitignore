@@ -1,0 +1,4 @@
+.serverless
+node_modules
+dist
+*/src/config/default.json

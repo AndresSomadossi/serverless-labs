@@ -1,0 +1,22 @@
+service: serverlesslabs-coldstarts
+provider:
+  name: aws
+  timeout: 20
+
+functions:
+  syncInit:
+    handler: src/syncInit.handler
+  syncLongInit:
+    handler: src/syncLongInit.handler
+  asyncBadInit:
+    handler: src/asyncBadInit.handler
+  asyncInit:
+    handler: src/asyncInit.handler
+  sharedEntrypointA:
+    handler: handler.sharedEntrypointA
+  sharedEntrypointB:
+    handler: handler.sharedEntrypointB
+  sharedEntrypointAsyncA:
+    handler: asyncHandler.sharedEntrypointA
+  sharedEntrypointAsyncB:
+    handler: asyncHandler.sharedEntrypointB
